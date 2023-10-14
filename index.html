@@ -77,7 +77,7 @@
                      <h2 class="font-accident-two-light uppercase">Suresh Yadaw</h2>
                   </div>
                   <div class="col-md-2 nopadding name-pdf">
-                     <a href="#" class="hvr-sweep-to-right"><i class="flaticon-download149" title="#"></i></a>
+                     <a href="https://docs.google.com/uc?export=download&id=1It9sQ5SG6BjyraRQFWHiHNFJEMpWVVXg" class="hvr-sweep-to-right"><i class="flaticon-download149" title="Download CV"></i></a>
                   </div>
                </div>
                <div class="row nopadding position">
@@ -98,32 +98,36 @@
                      <a href="https://www.linkedin.com/in/sureshyadaw/" target="_blank" class="hvr-sweep-to-right"><i
                            class="flaticon-linkedin22" title="Suresh Yadaw | Linkedin Profile"></i></a>
                   </div>
-               </div>
+               </div>               
                <!-- /Name-Position -->
                <!-- Main Navigation -->
                <ul id="nav" class="row nopadding cd-side-navigation">
-                  <li class="col-xs-4 col-sm-2 nopadding menuitem green">
-                     <a href="#!" class="hvr-sweep-to-bottom"><i class="flaticon-insignia"></i><span>home</span></a>
+                  <li class="col-xs-4 col-sm-2 nopadding menuitem green" id="homeTab">
+                     <a href="#" class="hvr-sweep-to-bottom">
+                        <i class="flaticon-insignia"></i><span>home</span>
+                     </a>
                   </li>
-                  <li class="col-xs-4 col-sm-2 nopadding menuitem blue">
+                  <li class="col-xs-4 col-sm-2 nopadding menuitem blue" id="resumeTab">
                      <a href="#" class="hvr-sweep-to-bottom"><i
                            class="flaticon-graduation61"></i><span>resume</span></a>
                   </li>
-                  <li class="col-xs-4 col-sm-2 nopadding menuitem cyan">
-                     <a href="#!" class="hvr-sweep-to-bottom"><i
+                  <li class="col-xs-4 col-sm-2 nopadding menuitem cyan" id="portfolioTab">
+                     <a href="#" class="hvr-sweep-to-bottom"><i
                            class="flaticon-book-bag2"></i><span>portfolio</span></a>
                   </li>
-                  <li class="col-xs-4 col-sm-2 nopadding menuitem orange">
+                  <li class="col-xs-4 col-sm-2 nopadding menuitem orange" id="contactsTab">
                      <a href="#!" class="hvr-sweep-to-bottom"><i
                            class="flaticon-placeholders4"></i><span>contacts</span></a>
                   </li>
-                  <li class="col-xs-4 col-sm-2 nopadding menuitem red">
-                     <a href="#!" class="hvr-sweep-to-bottom"><i
+                  <li class="col-xs-4 col-sm-2 nopadding menuitem red" id="feedbackTab">
+                     <a href="https://www.linkedin.com/in/sureshyadaw/" target="_blank" class="hvr-sweep-to-bottom"><i
                            class="flaticon-earphones18"></i><span>feedback</span></a>
                   </li>
-                  <!-- <li class="col-xs-4 col-sm-2 nopadding menuitem yellow">
-                  <a href="blog.html" class="hvr-sweep-to-bottom"><i class="flaticon-pens15"></i><span>blog</span></a>
-               </li>-->
+                  <li class="col-xs-4 col-sm-2 nopadding menuitem yellow">
+                     <a href="https://www.linkedin.com/in/sureshyadaw/" target="_blank" class="hvr-sweep-to-bottom">
+                        <i class="flaticon-pens15"></i><span>blog</span>
+                     </a>
+                  </li>
                </ul>
                <!-- /Main Navigation -->
             </div>
@@ -134,7 +138,7 @@
             style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInDown;">
             <div class="col-md-12 nopadding">
                <div class="row nopadding">
-                  <div class="col-md-8 nopadding ">
+                  <div class="col-md-8 nopadding activeTab" id="aboutMeId">
                      <div class="row nopadding">
                         <div class="col-md-12 fullwidth padding-50">
                            <h3 class="font-accident-two-normal uppercase">About me</h3>
@@ -156,7 +160,7 @@
                                        <h5 class="font-accident-one-bold uppercase">Progressive</h5>
                                        <div class="dividewhite1"></div>
                                        <p class="small">
-                                          Since leaving home in 2001, I have built a strong career in IT over last 15
+                                          Since leaving home in 2009, I have built a strong career in IT over last 7
                                           Years
                                        </p>
                                     </div>
@@ -194,11 +198,15 @@
                         </div>
                      </div>
                   </div>
+                  <div class="col-md-8 nopadding" id="resumeId" style="display: none;">
+                     <iframe src="https://docs.google.com/document/d/e/2PACX-1vR3ho9nrN4AmZU0hXUBFWdEA1TZr-lRv0xVVHt6jTPo-MZ4Leu4LY3CgaxdKSECyIj4YYy_9SalVIXU/pub?embedded=true">
+                     </iframe>
+                  </div>
                   <div class="col-md-4 personal nopadding l-grey">
                      <div class="padding-50">
                         <h3 class="font-accident-two-normal uppercase">Personal Info</h3>
                         <div class="dividewhite2"></div>
-                        <div>
+                        <div class="personal-info-child">
                            <div class="fullwidth box">
                               <div class="one">
                                  <p class="small font-regular-bold uppercase">Name:</p>
@@ -234,7 +242,7 @@
                         </div>
                         <div class="dividewhite3"></div>
                      </div>
-                  </div>
+                  </div>                  
                </div>
             </div>
          </div>
@@ -296,8 +304,9 @@
                               <div></div>
                               <h4 class="font-accident-one-normal uppercase">DATABASES</h4>
                               <p class="small">
-                                 Senior SQL Server developer, have worked on designing, developing schemas, stored procedures.
-                                 Have worked with large (20M+) data set. 
+                                 Senior SQL Server developer, have worked on designing, developing schemas, stored
+                                 procedures.
+                                 Have worked with large (20M+) data set.
                               </p>
                            </div>
                         </div>
@@ -308,7 +317,8 @@
                               <div></div>
                               <h4 class="font-accident-one-normal uppercase">Web DEVELOPEMENT</h4>
                               <p class="small">
-                                 Senior web developer having end to end experenice of designing, developing,payment integration and hosting and maintaining.  
+                                 Senior web developer having end to end experenice of designing, developing,payment
+                                 integration and hosting and maintaining.
                               </p>
                            </div>
                         </div>
@@ -331,7 +341,7 @@
                <div class="divider-dynamic"></div>
             </div>
             <div class="col-md-3 cv-link">
-               <h4 class="font-accident-two-normal uppercase"><a href="#">Download cv</a></h4>
+               <h4 class="font-accident-two-normal uppercase"><a href="https://docs.google.com/uc?export=download&id=1It9sQ5SG6BjyraRQFWHiHNFJEMpWVVXg">Download CV</a></h4>
                <div class="dividewhite1"></div>
                <a href="#">English</a>
                <!--<a href="#!">German</a>
@@ -364,7 +374,7 @@
          <div class="dividewhite1"></div>
          <div class="row">
             <div class="col-md-12 copyrights">
-               <p>© 2022 SURESH YADAW.</p>
+               <p>© <span id="copyrightsYear"></span> SURESH YADAW.</p>
             </div>
          </div>
       </div>
