@@ -1,1 +1,4 @@
 theme: jekyll-theme-cayman
+domain: sureshyadaw437.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+url: https://sureshyadaw437.github.io/  # the base hostname and protocol for your site, e.g. http://example.com
+baseurl: /profile/      # place folder name if the site is served in a subfolder
