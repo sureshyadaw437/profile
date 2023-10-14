@@ -1,9 +1,7 @@
 (function ($) {
     'use strict';
 
-
     $(window).load(function () {
-
         /* Preloader */
         $('#preloader').fadeOut('slow', function () {
             $(this).remove();
@@ -22,7 +20,44 @@
             img.src = src;
             $('#image-cache').append(img);
         });
+        
+        $('#copyrightsYear').html(new Date().getFullYear());
+        
+        $('#nav').on('click', 'li', function () {
+            var clickedTab = this;
+            var currentActiveDiv = $('#homesection .activeTab');
+            if (clickedTab && currentActiveDiv && currentActiveDiv.length > 0) {
 
+                if (clickedTab.id == 'contactsTab') {
+                    $('.personal-info-child').addClass('highlight-contacts');
+                    return;
+                }
+                $('.personal-info-child').removeClass('highlight-contacts');
+                if ((clickedTab.id == 'homeTab' && currentActiveDiv[0].id == 'aboutMeId')
+                    || (clickedTab.id == 'resumeTab' && currentActiveDiv[0].id == 'resumeId')
+                    || (clickedTab.id == 'portfolioTab' && currentActiveDiv[0].id == 'resumeId')
+                ) {
+                    return;
+                }
+                $(currentActiveDiv[0]).removeClass('activeTab');
+                $(currentActiveDiv[0]).hide();
+            }
+
+            switch (clickedTab.id) {
+                case 'homeTab':
+                    $('#aboutMeId').addClass('activeTab');
+                    $('#aboutMeId').show();
+                    break;
+                case 'resumeTab':
+                case 'portfolioTab':
+                    $('#resumeId').addClass('activeTab');
+                    $('#resumeId').show();
+                    break;
+                default:
+                    $('#aboutMeId').addClass('activeTab');
+                    $('#aboutMeId').show();
+            }
+        });
 
         /* Animated Title */
         (function () {
