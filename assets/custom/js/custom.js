@@ -23,6 +23,14 @@
         
         $('#copyrightsYear').html(new Date().getFullYear());
         
+        function scrollToElement(element) {
+            if(element){
+                $('html, body').animate({
+                    scrollTop: element.offset().top
+                }, 500); // Adjust the duration as needed
+            }
+            //element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
         $('#nav').on('click', 'li', function () {
             var clickedTab = this;
             var currentActiveDiv = $('#homesection .activeTab');
@@ -30,6 +38,7 @@
 
                 if (clickedTab.id == 'contactsTab') {
                     $('.personal-info-child').addClass('highlight-contacts');
+                    scrollToElement($('.personal-info-child'));
                     return;
                 }
                 $('.personal-info-child').removeClass('highlight-contacts');
@@ -37,6 +46,7 @@
                     || (clickedTab.id == 'resumeTab' && currentActiveDiv[0].id == 'resumeId')
                     || (clickedTab.id == 'portfolioTab' && currentActiveDiv[0].id == 'resumeId')
                 ) {
+                    scrollToElement($('#'+currentActiveDiv[0].id));
                     return;
                 }
                 $(currentActiveDiv[0]).removeClass('activeTab');
@@ -47,15 +57,18 @@
                 case 'homeTab':
                     $('#aboutMeId').addClass('activeTab');
                     $('#aboutMeId').show();
+                    scrollToElement($('#aboutMeId'));
                     break;
                 case 'resumeTab':
                 case 'portfolioTab':
                     $('#resumeId').addClass('activeTab');
                     $('#resumeId').show();
+                    scrollToElement($('#resumeId'));
                     break;
                 default:
                     $('#aboutMeId').addClass('activeTab');
                     $('#aboutMeId').show();
+                    scrollToElement($('#aboutMeId'));
             }
         });
 
