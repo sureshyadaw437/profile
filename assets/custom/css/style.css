@@ -674,7 +674,7 @@ button, input, select, textarea {
     color: #a7a7a7; }
     #top-navigation .ident .vc-photo {
       min-height: 360px;
-      background: url("../images/SureshYadaw_Profile.jpg");
+      background: url("../images/Sureshyadaw_Profile.jpg");
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -932,6 +932,17 @@ button, input, select, textarea {
   display: block;
   color: #aaa;
   margin-top: 12px; }
+  
+#resumeId iframe{
+  height: 500px; 
+  width: 100%;
+}
+.highlight-contacts {
+  border: 2px solid #614b54;
+  color: white;
+  border-radius: 10px;
+}
+
 
 /* Vertical Timeline */
 #timeline-vertical > div > div .btn-lgr-str {
